@@ -11,7 +11,7 @@
 #import "OVGraphYIndicatorView.h"
 @class OVPlotScrollView;
 @interface OVGraphPlotView : UIView <UIScrollViewDelegate>{
-    int yscale;
+    double yscale; // change this to double because if there are more than the number of available pixels in a column, all the columns will be 0 height.
     int spacebetweenpoints;
     UIColor *opaquecolor;
     UIColor *lightercolor;
