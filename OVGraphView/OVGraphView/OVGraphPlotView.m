@@ -157,9 +157,7 @@
             CGContextStrokePath(context);
             CGContextRestoreGState(context);
             
-            [point.xlabel drawAtPoint:CGPointMake(xpoint, self.frame.size.height-20) withFont:[UIFont fontWithName:@"Futura" size:12]];
-            int yvalueoffset;
-            yvalueoffset=0-30;
+            [point.xlabel drawAtPoint:CGPointMake(xpoint, self.frame.size.height-20) withAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"Futura" size:12]}];
             
             OVGraphYIndicatorView *ind=[[OVGraphYIndicatorView alloc]initWithFrame:CGRectMake(xpoint-15, ypoint-30, 40, 28)];
             ind.yValueLabel.text=[point.yvalue stringValue];
