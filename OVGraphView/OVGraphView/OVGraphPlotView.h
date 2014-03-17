@@ -11,7 +11,7 @@
 #import "OVGraphYIndicatorView.h"
 @class OVPlotScrollView;
 @interface OVGraphPlotView : UIView <UIScrollViewDelegate>{
-    int yscale;
+    double yscale;
     int spacebetweenpoints;
     UIColor *opaquecolor;
     UIColor *lightercolor;
