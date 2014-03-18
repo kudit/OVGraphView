@@ -129,7 +129,7 @@
     int prevxpoint=0;
     int prevypoint=0;
     int i=0;
-    if (_plotpoints!=nil) {
+    if (_plotpoints!=nil && [_plotpoints count] > 0) {
         for (OVGraphViewPoint *point in _plotpoints) {
             int xpoint;
             int ypoint;
